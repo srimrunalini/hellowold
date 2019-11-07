@@ -8,7 +8,7 @@
  * Please don't modify the code.
  * @author Siva Sankar
  */
-package ds_m3ass1;
+package ds_m3ass2;
 import org.junit.runner.JUnitCore;
 import org.junit.runner.Result;
 import org.junit.runner.notification.Failure;

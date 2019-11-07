@@ -1,7 +1,7 @@
-Quick Sort:
+Merge Sort:
 
-Given an Integer array sort the array using Quick Sort
+Given an String array sort the array using Merge Sort
 
-You were given a Solution file contains a method quickSort which accepts an integer array as parameter.
+You were given a Solution file contains a method mergeSort which accepts an String array as parameter.
 
-quickSort – Sort the array passed as parameter by using quick sort and return the array.
+mergeSort – Sort the array passed as parameter by using merge sort and return the array.
