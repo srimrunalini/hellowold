@@ -1,9 +1,7 @@
-Elementary Sorts:
+Quick Sort:
 
-Given an Integer array sort the array using insertion and selection sort
+Given an Integer array sort the array using Quick Sort
 
-You were given a Solution file contains two methods sortInsertion and sortSelection which accepts an integer array as parameter.
+You were given a Solution file contains a method quickSort which accepts an integer array as parameter.
 
-sortInsertion – Sort the array passed as parameter by using insertion sort and return the array.
-
-SortSelection - Sort the array passed as parameter by using selection sort and return the array.
+quickSort – Sort the array passed as parameter by using quick sort and return the array.

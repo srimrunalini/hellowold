@@ -1,39 +1,39 @@
-package m2ass3;
+package ds_m3ass1;
 
 class Solution{
-	public int[] sortInsertion(int[] arr){
+	public static int[] quickSort(int[] arr){
 		// fill you code Here
-		if(arr.length!=-1) {
-		for (int i=0; i<arr.length; i++)
-		   {
-		      int index = arr[i]; 
-		      int j = i;
-		      while (j > 0 && arr[j-1] > index)
-		      {
-		           arr[j] = arr[j-1];
-		           j--;
-		      }
-		      arr[j] = index;
-		}
+		int size = arr.length;
+		quickSort(arr, 0, size - 1);
 		return arr;
-		}
-		return null;
-		}
-	
-	public int[] sortSelection(int[] arr){
-		// fill you code Here
-		if(arr.length!=-1) {
-		for (int i = 0; i<arr.length-1; i++)
-		   {
-		      int min = i;
-		      for (int j = i+1; j <arr.length; j++)
-		            if (arr[j]<arr[min]) min = j;
-		      int temp = arr[i];
-		      arr[i] = arr[min];
-		      arr[min] = temp;
-		} 
-		return arr;
-		}
-		return null;
 	}
+	public static void quickSort(int arr[],int lower, int upper) {
+
+		if (upper <= lower)
+			return;
+		int pivot = arr[lower];
+		int start = lower;
+		int stop = upper;
+
+		while (lower < upper) {
+			while (arr[lower] <= pivot && lower < upper) {
+				lower++;
+			}
+			while (arr[upper] > pivot && lower <= upper) {
+				upper--;
+			}
+			if (lower < upper) {
+				swap(arr, upper, lower);
+			}
+		}
+		swap(arr, upper, start); 
+		quickSort(arr, start, upper - 1);
+		quickSort(arr, upper + 1, stop); 
+	}
+	private static void swap(int arr[], int first, int second) {
+		int temp = arr[first];
+		arr[first] = arr[second];
+		arr[second] = temp;
+	}
+	
 }
